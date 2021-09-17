@@ -4,7 +4,7 @@ const GuestInput = () => {
   const [name, setName] = useState("Guest");
 
   const addName = () => {
-    console.log("clicked");
+    setName("new guest");
   };
 
   const handleChange = () => {

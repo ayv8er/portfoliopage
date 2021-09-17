@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import GuestInput from "./components/GuestInput";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 import "./App.css";
 
