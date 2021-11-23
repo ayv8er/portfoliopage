@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Switch,
+} from "react-router-dom";
 
 import "./App.css";
 import Intro from "./components/Intro";
@@ -15,10 +20,38 @@ function App() {
             <h1>Richard J Oh</h1>
           </div>
           <div className="navigator">
-            <Link to="/home">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/projects">Projects</Link>
+            <NavLink
+              to="/home"
+              className="links"
+              exact
+              activeStyle={{ color: "red" }}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="links"
+              exact
+              activeStyle={{ color: "red" }}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="links"
+              exact
+              activeStyle={{ color: "red" }}
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className="links"
+              exact
+              activeStyle={{ color: "red" }}
+            >
+              Projects
+            </NavLink>
           </div>
         </nav>
       </header>

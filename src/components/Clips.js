@@ -1,10 +1,12 @@
 import React from "react";
 
+import Crypto from "./Crypto";
+
 const Clips = () => {
   return (
-    <div>
-      <h3>images of my work</h3>
-    </div>
+    <section className="projects">
+      <Crypto />
+    </section>
   );
 };
 
