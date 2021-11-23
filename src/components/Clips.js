@@ -6,6 +6,10 @@ const Clips = () => {
   return (
     <section className="projects">
       <Crypto />
+      <Crypto />
+      <Crypto />
+      <Crypto />
+      <Crypto />
     </section>
   );
 };

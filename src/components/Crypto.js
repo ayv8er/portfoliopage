@@ -3,7 +3,6 @@ import React from "react";
 const Crypto = () => {
   return (
     <a
-      className="linkContainer"
       href="https://cryptomarketinfo.vercel.app/"
       rel="noreferrer"
       target="_blank"

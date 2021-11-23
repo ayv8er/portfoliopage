@@ -4,6 +4,7 @@ import {
   Route,
   NavLink,
   Switch,
+  Redirect,
 } from "react-router-dom";
 
 import "./App.css";
@@ -20,59 +21,37 @@ function App() {
             <h1>Richard J Oh</h1>
           </div>
           <div className="navigator">
-            <NavLink
-              to="/home"
-              className="links"
-              exact
-              activeStyle={{ color: "red" }}
-            >
+            <NavLink to="/home" className="links">
               Home
             </NavLink>
-            <NavLink
-              to="/about"
-              className="links"
-              exact
-              activeStyle={{ color: "red" }}
-            >
+            <NavLink to="/about" className="links">
               About
             </NavLink>
-            <NavLink
-              to="/contact"
-              className="links"
-              exact
-              activeStyle={{ color: "red" }}
-            >
+            <NavLink to="/contact" className="links">
               Contact
             </NavLink>
-            <NavLink
-              to="/projects"
-              className="links"
-              exact
-              activeStyle={{ color: "red" }}
-            >
+            <NavLink to="/projects" className="links">
               Projects
             </NavLink>
           </div>
         </nav>
       </header>
-
       <div>
         <Intro />
       </div>
-
       <div>
         <Clips />
       </div>
-
       <div>
         <Footer />
       </div>
-
       <Switch>
         <Route path="/projects" />
         <Route path="/contact" />
         <Route path="/about" />
-        <Route path="/home" />
+        <Route path="/home">
+          <Redirect to="/" />
+        </Route>
         <Route path="/" />
       </Switch>
     </Router>

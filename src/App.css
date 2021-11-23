@@ -146,18 +146,21 @@ body {
   font-family: sans-serif, serif;
   line-height: 1.5;
   font-size: 1.6rem;
-  background-color: #fbfffb;
-  color: black;
+  color: #f0f7f0;
+  background-color: rgb(29, 28, 28);
 }
 
 h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .navHead {
   display: flex;
   flex-flow: column nowrap;
-  border: pink 1px solid;
   padding: 2rem;
 }
 
@@ -165,19 +168,22 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  border: 1px black solid;
+  border: 1px white solid;
 }
 
 .links {
-  border: orange 1px solid;
-  padding: 0 3rem 0 3rem;
-  font-weight: bold;
+  padding: 0.5rem 3rem;
   text-decoration: none;
+  color: white;
+}
+
+.links:hover {
+  border: 1px solid white;
 }
 
 .introMain {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border: red 1px solid;
 }
 
@@ -185,21 +191,24 @@ h1 {
   border: blue 1px solid;
   flex: 0 1 auto;
   padding: 10rem;
+  margin: 0 2rem 0 2rem;
 }
 
 .introRight {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
   align-content: space-between;
   border: green 1px solid;
   flex: 0 1 auto;
   padding: 2rem;
-  justify-content: space-around;
+  margin: 0 2rem 0 2rem;
   align-items: center;
 }
 
-.introButton {
+.button {
   padding: 0.5rem;
+  margin: 2rem;
   font-weight: bold;
 }
 
@@ -228,4 +237,11 @@ h1 {
 
 #crypto {
   background-color: burlywood;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
