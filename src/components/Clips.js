@@ -9,7 +9,6 @@ const Clips = () => {
       <Crypto />
       <Crypto />
       <Crypto />
-      <Crypto />
     </section>
   );
 };
